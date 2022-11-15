@@ -1,0 +1,85 @@
+@media (orientation: portrait){
+    #logoimg{
+        height: 20vw;
+    }
+
+    #logodiv{
+        font-size: 5vw;
+    }
+
+    #wym{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wym img{
+        height: 40vw;
+        width: fit-content;
+        clip-path: none;
+        border-radius: 5px;
+    }
+
+    #wym .band-txt{
+        margin-top : 4vw;
+    }
+
+    #wym .band-txt{
+        align-items: center;
+    }
+
+    #wym h2{
+        font-size: 7vw;
+    }
+
+    #wym p{
+        font-size: 3vw;
+        text-align: center;
+        line-height: 3.5vw;
+    }
+
+    .cssdisable{
+        clip-path: inherit;
+        border-radius: 5px;
+    }
+
+    .pc-frame{
+        height: inherit;
+        padding: inherit;
+    }
+
+    lottie-player{
+        display: none;
+    }
+
+    #illustrations{
+        display: flex!important;
+        width: 100%;
+        height: 62.5vw;
+        border-radius: inherit;
+
+        position: inherit;
+        transform: inherit;
+
+    }
+
+    #contact{
+        display: block!important;
+
+        margin-bottom: 4vw;
+
+        height: inherit;
+    }
+
+    #contact-title{
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    #contact p{
+        font-size: 3vw;
+    }
+
+    #contact-form input{
+        font-size: 4vw;
+    }
+}

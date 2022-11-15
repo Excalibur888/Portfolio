@@ -1,0 +1,5 @@
+DirectoryIndex index.php index.html index.htm
+
+ErrorDocument 403 https://infinityfree.net/errors/403/
+ErrorDocument 404 https://dumond.dev
+ErrorDocument 500 https://infinityfree.net/errors/500/

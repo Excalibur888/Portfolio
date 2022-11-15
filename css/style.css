@@ -1,0 +1,566 @@
+/******************
+Colors Declarations
+******************/
+
+
+:root{
+    --blue: #00a1a6;
+    --darker-blue: #093132;
+    --background: #222222;
+}
+
+
+/******************
+Fonts Déclarations
+******************/
+
+
+@font-face{
+    font-family: "azonix";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Azonix Regular'), url('../assets/Typos/azonix-cufonfonts-webfont/Azonix.woff') format('woff');
+}
+
+
+@font-face{
+    font-family: 'lunchtype22regular';
+    src: url('../assets/Typos/Lunchtype22/Web/lunchtype22-regular-webfont.eot');
+    src: url('../assets/Typos/Lunchtype22/Web/lunchtype22-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-regular-webfont.woff2') format('woff2'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-regular-webfont.woff') format('woff'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-regular-webfont.ttf') format('truetype'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-regular-webfont.svg#lunchtype22regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'lunchtype22medium';
+    src: url('../assets/Typos/Lunchtype22/Web/lunchtype22-medium-webfont.eot');
+    src: url('../assets/Typos/Lunchtype22/Web/lunchtype22-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-medium-webfont.woff2') format('woff2'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-medium-webfont.woff') format('woff'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-medium-webfont.ttf') format('truetype'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-medium-webfont.svg#lunchtype22medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'lunchtype22light';
+    src: url('../assets/Typos/Lunchtype22/Web/lunchtype22-light-webfont.eot');
+    src: url('../assets/Typos/Lunchtype22/Web/lunchtype22-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-light-webfont.woff2') format('woff2'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-light-webfont.woff') format('woff'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-light-webfont.ttf') format('truetype'),
+    url('../assets/Typos/Lunchtype22/Web/lunchtype22-light-webfont.svg#lunchtype22light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face{
+    font-family: "Averta";
+    src: url("//db.onlinewebfonts.com/t/150037e11f159dca84bc4c04549094b6.eot");
+    src: url("//db.onlinewebfonts.com/t/150037e11f159dca84bc4c04549094b6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/150037e11f159dca84bc4c04549094b6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/150037e11f159dca84bc4c04549094b6.woff") format("woff"), url("//db.onlinewebfonts.com/t/150037e11f159dca84bc4c04549094b6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/150037e11f159dca84bc4c04549094b6.svg#Averta-Regular") format("svg");
+}
+
+
+/*==========================*\
+      Computer/Tablet UX
+\*==========================*/
+
+
+/******************
+   Global Style
+******************/
+
+html{
+    background: black;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar{
+    display: none; /* Chrome Safari Opera */
+
+}
+
+body{
+    margin: 0;
+    cursor: url(../assets/Graphics/Cursor/white-cursor.svg) 8 8, auto;
+}
+
+.section-title{
+    margin: 0;
+
+    color: white;
+    font-size: 4vw;
+    font-family: lunchtype22medium, sans-serif;
+}
+
+.blue-higlight{
+    color: var(--blue);
+}
+
+.bullet{
+    height: 1.7vw!important;
+    width: 1.7vw!important;
+    margin: .3vw;
+    fill: var(--blue);
+}
+
+.section{
+    margin: 4vw 0;
+}
+
+/*****************
+   Loader Style
+*****************/
+
+loader{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    position: fixed;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: black;
+
+    z-index: 5;
+}
+
+loader img{
+    height: 10vw;
+    width: 10vw;
+
+    margin: -5vw 0 0 -5vw;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+}
+
+/*****************
+   Header Style
+*****************/
+
+header{
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0 0 8vw 0;
+
+    background: black;
+}
+
+#trees{
+    padding-top: 2vw;
+    width: 100vw;
+    background: linear-gradient(180deg, var(--blue) -10%, #000000 84%) no-repeat;
+}
+
+#trees-bck{
+    position: absolute;
+    padding-top: 2vw;
+    width: 100vw;
+    height: 33vw;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 75%, rgba(0,0,0,0.506061799719888) 80%, rgba(0,0,0,1) 83%);}
+
+#logodiv{
+    width: 100%;
+
+    margin: 0;
+    padding: 2vw 0 2vw 0;
+
+    position: absolute;
+    top: 18vw;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
+    color: white;
+    font-size: 7vh;
+    font-family: Azonix, sans-serif;
+}
+
+.blk-bgd{
+    background: black;
+}
+
+#logoimg{
+    height: 25vh;
+    width: auto;
+}
+
+.logo{
+    margin: 0;
+    transition: all .3s;
+    line-height: 7.7vh;
+}
+
+.logo_hide{
+    font-size: 0;
+    opacity: 0;
+
+}
+
+.img_trans{
+    height: 6vw !important;
+    width: auto;
+}
+
+.point_trans{
+    font-size: 4vw;
+    line-height: 2.2vw;
+}
+
+.stop_top{
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1;
+}
+
+#welcomemsg{
+    height: 12vh;
+
+    margin: 0;
+    margin-top: 20vh;
+    padding: 4vw;
+
+    text-align: left;
+    font-size: 3vw;
+    font-family: lunchtype22medium, sans-serif;
+    line-height: 4vw;
+    background: black;
+}
+
+#welcomemsg mark{
+    background-color: white;
+    color: black;
+
+}
+
+/*****************
+    Main Style
+*****************/
+
+#wym{
+    width: 100vw;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#wym img{
+    height: 32vw;
+    width: auto;
+
+    clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+}
+
+#wym p{
+    margin: 2vw 0 0 0;
+
+    color: white;
+    font-size: 2vw;
+    font-family: lunchtype22medium, sans-serif;
+    text-align: right;
+    line-height: 2.6vw;
+}
+
+#wym .band-txt{
+    padding: 0 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: flex-end;
+}
+
+.cssdisable{
+    margin-top: 1vw;
+    padding: 2vw;
+    border: hidden;
+
+    width: 60vw;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    background: var(--blue);
+
+    color: white;
+    font-size: 2vw;
+    font-family: lunchtype22medium, sans-serif;
+
+    transition: .3s;
+    cursor: url(../assets/Graphics/Cursor/white-cursor.svg) 8 8, auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.2% 100%);
+}
+
+.cssdisable:hover{
+    border: hidden;
+
+    background: var(--darker-blue);
+}
+
+.moving-tree{
+    padding: 5vw;
+
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tree1{
+    position: absolute;
+    top: 153vw;
+    left: -4vw;
+}
+
+#tree2{
+    position: absolute;
+    top: 86vw;
+    right: -2vw;
+}
+
+.moving-tree img{
+    height: 15vw;
+    filter: drop-shadow(0px 0px 30px rgb(0, 161, 166));
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#illustrations{
+    margin-top: 2vw!important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#illustrations a{
+    top: 12vw;
+
+    height: 55vw;
+
+    position: sticky;
+}
+
+.subject{
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    top: 0;
+
+    margin: 0;
+    padding: 2vw;
+
+    color: white;
+    text-align: center;
+    font-family: lunchtype22regular, sans-serif;
+    transition: .3s;
+}
+
+
+#illustrations img:hover + .subject{
+    display: block;
+}
+
+.subject h2{
+    display: inline-block;
+    font-size: 3vw;
+    font-family: lunchtype22medium, sans-serif;
+
+}
+
+.subject p{
+    font-size: 1.5vw;
+}
+
+#illustrations img{
+
+    width: 70vw;
+    transition: .3s;
+
+}
+
+#illustrations img:hover{
+    filter: brightness(30%);
+}
+
+#contact{
+    padding: 0 5vw;
+}
+
+#contact-form{
+    margin: 0;
+
+    display: inline-grid;
+
+    width: 100%;
+}
+
+#contact-form label{
+    margin: 2vw 0 0.5vw 0;
+
+    color: white;
+    font-family: lunchtype22regular, sans-serif;
+    font-size: 1.6vw;
+    cursor: url(../assets/Graphics/Cursor/white-cursor.svg) 8 8, auto;
+}
+
+#contact-form input{
+    margin: 0;
+    padding-bottom: 0.2vw;
+    border: none;
+    border-bottom: 0.2vw solid var(--darker-blue);
+
+    background: black;
+    color: var(--blue);
+    font-family: lunchtype22light, sans-serif;
+    font-size: 2vw;
+    cursor: url(../assets/Graphics/Cursor/white-text-cursor.svg) 16 8, auto;
+    transition: .3s;
+}
+
+#contact-form input:hover{
+    border-bottom: 0.2vw solid var(--blue);
+}
+
+#contact-form textarea{
+    margin: 0;
+    padding: 0.2vw;
+    border: 0.2vw solid var(--darker-blue);
+
+    height: 8vw;
+
+    background: black;
+    color: var(--blue);
+    font-family: lunchtype22light, sans-serif;
+    font-size: 2vw;
+    cursor: url(../assets/Graphics/Cursor/white-text-cursor.svg) 16 8, auto;
+    transition: .3s;
+
+}
+
+#contact-form textarea:hover{
+    border: 0.2vw solid var(--blue);
+}
+
+#contact-form #submit-button{
+    margin: 1vw 0 8vw 0;
+    border: hidden;
+
+    height: 4vw;
+
+    background: var(--blue);
+    color: white;
+    font-family: lunchtype22medium, sans-serif, sans-serif;
+    font-size: 2vw;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+    cursor: url(../assets/Graphics/Cursor/white-cursor.svg) 8 8, auto;
+}
+
+#contact-form #submit-button:hover{
+    background: var(--darker-blue);
+}
+
+#contact-form #submit-button:active{
+    border: 0.2vw solid black;
+
+    background: black;
+    color: var(--blue);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+    outline: none;
+}
+
+::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--darker-blue);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: var(--darker-blue);
+}
+
+::-ms-input-placeholder{ /* Microsoft Edge */
+    color: var(--darker-blue);
+}
+
+.context-menu{
+    position: absolute;
+    cursor: url(../assets/Graphics/Cursor/white-cursor.svg) 8 8, auto;
+    z-index: 2;
+}
+.context-menu ul{
+    margin: 0;
+    padding: 1vw;
+    border-radius: 5px;
+    box-shadow: 0.1vw 0.1vw 0.6vw var(--blue);
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width : 10vw;
+
+    background-color: black;
+    list-style: none;
+}
+.context-menu a{
+    height: 3vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 2.5px;
+
+    text-decoration: unset;
+    color: white;
+    font-family: lunchtype22medium, sans-serif;
+    font-size: 1.4vw;
+    transition: .3s;
+    cursor: url(../assets/Graphics/Cursor/white-cursor.svg) 8 8, auto;
+
+}
+.context-menu a:hover{
+    background: #505050;
+}
+
+/*****************
+   Footer Style
+*****************/
