@@ -4,7 +4,7 @@
 The Goal was to make a portfolio website to to present myself and show my work, with a modern and elegant design.
 
 ## 🖌️ UI
-I choose an unusual color palette based on : `##00a1a6`, `#093132` and `#222222`.
+I choose an unusual color palette based on : `#00a1a6`, `#093132` and `#222222`.
 I played with the shadows and the blue like the day and night in a strange but soothing atmosphere.
 
 ## 🔩 UX
