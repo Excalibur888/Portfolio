@@ -6,6 +6,7 @@ The Goal was to make a portfolio website to to present myself and show my work, 
 ## 🖌️ UI
 I choose an unusual color palette based on : `#00a1a6`, `#093132` and `#222222`.
 I played with the shadows and the blue like the day and night in a strange but soothing atmosphere.
+Many animations are in JS
 
 ## 🔩 UX
 Knowing that my site would not be mainstream, but rather oriented for people comfortable with computers, I chose to sacrifice some accessibility for the benefit of UI design.
