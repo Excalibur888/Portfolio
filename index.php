@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO("mysql:host=localhost;dbname=SitePerso;charset=utf8", "root", "root");
+$bdd = new PDO("mysql:host=localhost;dbname=SitePerso;charset=utf8", "x", "x");
 $bdd->query("SET lc_time_names = 'fr_FR'");
 
 $portfolio = $bdd->prepare('SELECT * FROM websites ORDER BY id DESC LIMIT 5');
