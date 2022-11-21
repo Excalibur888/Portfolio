@@ -70,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
     <link rel="icon" href="assets/Graphics/Logo/logo3d.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body onselectstart="return false">
 <loader>
@@ -128,6 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label data-aos="fade-right" for="text-field">Message</label>
             <textarea data-aos="fade-right" name="message" id="text-field"
                       placeholder="What an amazing website, I would love to work with you!" required></textarea>
+            <div class="g-recaptcha" data-theme="dark" data-sitekey="X" required></div>
             <button data-aos="zoom-in" type="submit" name="submit" id="submit-button">
                 <?php if (isset($btnmessage)) {
                     echo $btnmessage;
@@ -136,6 +138,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <?php } ?>
             </button>
         </form>
+        <script>
+            document.getElementById("contact-form").addEventListener("submit",function(evt)
+            {
+
+                var response = grecaptcha.getResponse();
+                if(response.length == 0)
+                {
+                    //reCaptcha not verified
+                    alert("Please check capcha!");
+                    evt.preventDefault();
+                    return false;
+                }
+                //captcha verified
+                //do the rest of your validations here
+
+            });
+        </script>
     </div>
 
 
